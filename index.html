@@ -1,552 +1,604 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTW Hackt</title>
-    <link rel="stylesheet" href="https://htw-hackt.de/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://htw-hackt.de/css/main.css" />
-  </head>
-  <body>
-    <!-- Particles Background -->
-    <div id="particles-js"></div>
-    <!-- Main Content -->
-    <div id="particles-overlay">
-      <!-- Header -->
-      <header>
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="header-wrapper col-md-6">
-              <h3 class="header-caption">Welcome to</h3>
-              <h1 class="header-title my-5">HTW Hackt</h1>
-              <p class="header-text">
-                The unofficial Cyber Security group at HTW Berlin.
-              </p>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!-- Section Activities -->
-      <section>
-        <a name="activities"></a>
-        <div class="container">
-          <!-- Activities Header -->
-          <div class="d-flex align-items-center justify-content-start">
-            <div
-              class="btn btn-outline-light rounded-circle"
-              style="margin-right: 1rem; cursor: default"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-activity"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
-                />
-              </svg>
-            </div>
-            <h1>Activities</h1>
-          </div>
-          <b class="divider"></b>
-          <!-- Activities Content -->
-          <div class="row text-center">
-            <div class="col-md-4 mt-4">
-              <div class="icon gradient mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  fill="currentColor"
-                  class="bi bi-journal-code svg-shadow"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
-                  />
-                  <path
-                    d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
-                  />
-                  <path
-                    d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
-                  />
-                </svg>
-              </div>
-              <h2>Workshops</h2>
-              <p>
-                Occasionally we host small workshops, presenting basic cyber
-                security concepts and beginner guides.
-              </p>
-            </div>
-            <div class="col-md-4 mt-4">
-              <div class="icon gradient mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  fill="currentColor"
-                  class="bi bi-people svg-shadow"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
-                  />
-                </svg>
-              </div>
-              <h2>Meetings</h2>
-              <p>
-                The weekly meeting is our main event where we can chat while
-                solving challenges from TryHackMe & Co. - everyone is welcome.
-              </p>
-            </div>
-            <div class="col-md-4 mt-4">
-              <div class="icon gradient mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="40"
-                  height="40"
-                  fill="currentColor"
-                  class="bi bi-flag svg-shadow"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
-                  />
-                </svg>
-              </div>
-              <h2>CTFs</h2>
-              <p>
-                For the riddle lovers - our CTF team
-                <a
-                  href="https://ctftime.org/team/179997"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >SYNN3R</a
-                >
-                plays regularly and is open for everyone who's curious.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Wave Divider -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 170 1440 140">
-        <path
-          class="solid-fill"
-          fill-opacity="1"
-          d="M0,192L120,213.3C240,235,480,277,720,282.7C960,288,1200,256,1320,240L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-        ></path>
-      </svg>
-      <!-- Section Achievements -->
-      <section class="solid-bg">
-        <a name="achievements"></a>
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-start">
-            <div
-              class="btn btn-outline-light rounded-circle"
-              style="margin-right: 1rem; cursor: default"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-flag"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
-                />
-              </svg>
-            </div>
-            <h1>Achievements</h1>
-          </div>
-          <b class="divider"></b>
-          <div class="row align-items-center justify-content-evenly">
-            <div class="col-md-6 d-flex justify-content-center">
-              <p style="text-align: center; margin: 1rem">
-                Our CTF team occasionally participates<br>in various events.
-              </p>
-            </div>
-            <div class="col-md-5 d-flex justify-content-center">
-              <div style="overflow-x: auto">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th class="theader">Event</th>
-                      <th class="theader">Date</th>
-                      <th class="theader">Place / Top %</th>
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2351"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >FAUST CTF</a
-                        >
-                      </th>
-                      <td>Sep 2024</td>
-                      <td>64nd / 60%</td>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2378"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >n00bzCTF</a
-                        >
-                      </th>
-                      <td>Aug 2024</td>
-                      <td>96nd / 10%</td>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2264"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Nullcon CTF</a
-                        >
-                      </th>
-                      <td>Mar 2024</td>
-                      <td>76nd / 26%</td>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2265"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Hackday Qualifications 2024</a
-                        >
-                      </th>
-                      <td>Jan 2024</td>
-                      <td>77nd / 66%</td>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2086"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Reply CTF 2023</a
-                        >
-                      </th>
-                      <td>Oct 2023</td>
-                      <td>58nd / 16%</td>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2011/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >FAUST CTF</a
-                        >
-                      </th>
-                      <td>Sep 2023</td>
-                      <td>72nd / 32%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/2087"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >CSAW CTF</a
-                        >
-                      </th>
-                      <td>Sep 2023</td>
-                      <td>191st / 17%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/1862/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Summit CTF</a
-                        >
-                      </th>
-                      <td>Apr 2023</td>
-                      <td>9th / 9%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/1696/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >MCH2022 CTF</a
-                        >
-                      </th>
-                      <td>Jul 2022</td>
-                      <td>19th / 4%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/1657"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >n00bzCTF</a
-                        >
-                      </th>
-                      <td>Jun 2022</td>
-                      <td>9th / 4%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/1660"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >BYUCTF</a
-                        >
-                      </th>
-                      <td>May 2022</td>
-                      <td>14th / 3%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-												  href="https://ctftime.org/event/1607"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >@HackDay Finals</a
-                        >
-                      </th>
-                      <td>May 2022</td>
-                      <td>17th / 72%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-                          href="https://ctftime.org/event/1606"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >@HackDay Qualification</a
-                        >
-                      </th>
-                      <td>Apr 2022</td>
-                      <td>4th / 1%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-                          href="https://ctftime.org/event/1567"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Space Heroes CTF</a
-                        >
-                      </th>
-                      <td>Apr 2022</td>
-                      <td>14th / 2%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-                          href="https://ctftime.org/event/1605"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >OFPPT CTF</a
-                        >
-                      </th>
-                      <td>Mar 2022</td>
-                      <td>4th / 1%</td>
-                    </tr>
-                    <tr>
-                      <th>
-                        <a
-                          href="https://ctftime.org/event/1406"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          >Bambi CTF #6</a
-                        >
-                      </th>
-                      <td>Oct 2021</td>
-                      <td>20th / 12%</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="section-divider-solid"></div>
-      <!-- Section Join Us -->
-      <section class="solid-bg">
-        <a name="join-us"></a>
-        <div class="container">
-          <div class="d-flex align-items-center justify-content-start">
-            <div
-              class="btn btn-outline-light rounded-circle"
-              style="margin-right: 1rem; cursor: default"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-person-plus"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-                />
-                <path
-                  fill-rule="evenodd"
-                  d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
-                />
-              </svg>
-            </div>
-            <h1>Join Us</h1>
-          </div>
-          <b class="divider"></b>
-          <div class="row align-items-center justify-content-center">
-            <div
-              class="col-md-5 text-center d-flex align-items-center mb-5"
-              style="flex-direction: column"
-            >
-              <p>You can chat with us over at Discord!</p>
-              <div class="sm-spacer"></div>
-              <a
-                id="discord-invite"
-                href="https://discord.gg/qeaqg8Sb86"
-                target="_blank"
-                rel="noopener noreferrer"
-                style="text-decoration: none; max-width: max-content"
-              >
-                <button
-                  style="display: flex; align-items: center"
-                  type="button"
-                  class="btn btn-outline-light btn-lg rounded-pill px-3"
-                >
-                  <img
-                    style="display: flex; height: 32px !important"
-                    src="https://htw-hackt.de/img/discord-icon.png"
-                    alt="Discord Icon"
-                  />
-                  <div style="padding-left: 0.5rem">Invite</div>
-                </button>
-              </a>
-            </div>
-            <div class="col-md-5 d-flex justify-content-center">
-              <img
-                id="qr-invite-image"
-                class="tilt15"
-                src="https://htw-hackt.de/img/qr-discord-invite.svg"
-                alt="Discord Invite QR-Code"
-                height="400px"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Wave Divider -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
-        <path
-          class="solid-fill"
-          fill-opacity="1"
-          d="M0,64L60,69.3C120,75,240,85,360,74.7C480,64,600,32,720,42.7C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-        ></path>
-      </svg>
-      <!-- Section whoami -->
-      <section>
-        <a name="whoami"></a>
-        <div class="container">
-          <h1>$ whoami</h1>
-          <b class="divider"></b>
-          <div class="row align-items-center justify-content-center">
-            <p>
-              HTW Hackt was founded by two Computer Engineering students with
-              the aim of bringing together all those who enjoy cyber security.
-              From curious beginner to advanced hacker, we welcome everyone to
-              our group of ever learning students.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer>
-        <!-- Wave Divider -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1440 150">
-          <path
-            class="solid-fill"
-            fill-opacity="1"
-            d="M0,128L80,144C160,160,320,192,480,197.3C640,203,800,181,960,165.3C1120,149,1280,139,1360,133.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-          ></path>
-        </svg>
-        <!-- Footer Content -->
-        <div class="footer-content">
-          <div class="container">
-            <div class="row align-items-center">
-              <!-- Support Us Button -->
-              <!-- Thanks for showing the interest to support us. Unfortunately we do not have this functionality setup yet.-->
-              <div class="col d-flex justify-content-center">
-                <button
-                  type="button"
-                  class="btn btn-outline-light btn-sm rounded-pill px-3"
-                >
-                  Support Us
-                </button>
-              </div>
-              <!-- Join Us Button -->
-              <div class="col d-flex justify-content-center">
-                <a href="index.html#join-us">
-                  <button
-                    type="button"
-                    class="btn btn-outline-light btn-sm rounded-pill px-3"
-                  >
-                    Join Us
-                  </button>
-                </a>
-              </div>
-              <!-- Privacy Group -->
-              <div class="col d-flex justify-content-center">
-                <div>
-                  <div class="container">
-                    <div class="row">
-                      <div>
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Privacy</h6>
-                        <p>
-                          <a href="https://htw-hackt.de/legal-notice.html" class="text-reset"
-                            >Legal Notice</a
-                          >
-                        </p>
-                        <p>
-                          <a href="https://htw-hackt.de/data-protection.html" class="text-reset"
-                            >Data Protection</a
-                          >
-                        </p>
-                      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTW Hackt</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <!-- Particles Background -->
+        <div id="particles-js"></div>
+        <!-- Main Content -->
+        <div id="particles-overlay">
+            <!-- Header -->
+            <header>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="header-wrapper col-md-6">
+                            <h3 class="header-caption">Welcome to</h3>
+                            <h1 class="header-title my-5">HTW Hackt</h1>
+                            <p class="header-text">
+                                The unofficial Cyber Security group at HTW
+                                Berlin.
+                            </p>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <!-- Copyright -->
-            <div class="row mt-4" style="left: 0; right: 0">
-              <div class="col text-center">© 2024 Copyright - HTW Hackt</div>
-            </div>
-          </div>
+            </header>
+            <!-- Section Activities -->
+            <section>
+                <a name="activities"></a>
+                <div class="container">
+                    <!-- Activities Header -->
+                    <div
+                        class="d-flex align-items-center justify-content-start"
+                    >
+                        <div
+                            class="btn btn-outline-light rounded-circle"
+                            style="margin-right: 1rem; cursor: default"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-activity"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                                />
+                            </svg>
+                        </div>
+                        <h1>Activities</h1>
+                    </div>
+                    <b class="divider"></b>
+                    <!-- Activities Content -->
+                    <div class="row text-center">
+                        <div class="col-md-4 mt-4">
+                            <div class="icon gradient mb-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-journal-code svg-shadow"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
+                                    />
+                                    <path
+                                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                                    />
+                                    <path
+                                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                                    />
+                                </svg>
+                            </div>
+                            <h2>Workshops</h2>
+                            <p>
+                                Occasionally we host small workshops, presenting
+                                basic cyber security concepts and beginner
+                                guides.
+                            </p>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="icon gradient mb-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-people svg-shadow"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                                    />
+                                </svg>
+                            </div>
+                            <h2>Meetings</h2>
+                            <p>
+                                The weekly meeting is our main event where we
+                                can chat while solving challenges from TryHackMe
+                                & Co. - everyone is welcome.
+                            </p>
+                        </div>
+                        <div class="col-md-4 mt-4">
+                            <div class="icon gradient mb-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-flag svg-shadow"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+                                    />
+                                </svg>
+                            </div>
+                            <h2>CTFs</h2>
+                            <p>
+                                For the riddle lovers - our CTF team
+                                <a
+                                    href="https://ctftime.org/team/179997"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >SYNN3R</a
+                                >
+                                plays regularly and is open for everyone who's
+                                curious.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Wave Divider -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 170 1440 140">
+                <path
+                    class="solid-fill"
+                    fill-opacity="1"
+                    d="M0,192L120,213.3C240,235,480,277,720,282.7C960,288,1200,256,1320,240L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                ></path>
+            </svg>
+            <!-- Section Achievements -->
+            <section class="solid-bg">
+                <a name="achievements"></a>
+                <div class="container">
+                    <div
+                        class="d-flex align-items-center justify-content-start"
+                    >
+                        <div
+                            class="btn btn-outline-light rounded-circle"
+                            style="margin-right: 1rem; cursor: default"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-flag"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+                                />
+                            </svg>
+                        </div>
+                        <h1>Achievements</h1>
+                    </div>
+                    <b class="divider"></b>
+                    <div class="row align-items-center justify-content-evenly">
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <p style="text-align: center; margin: 1rem">
+                                Our CTF team occasionally participates<br />in
+                                various events.
+                            </p>
+                        </div>
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <div style="overflow-x: auto">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="theader">Event</th>
+                                            <th class="theader">Date</th>
+                                            <th class="theader">
+                                                Place / Top %
+                                            </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2351"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >FAUST CTF</a
+                                                >
+                                            </th>
+                                            <td>Sep 2024</td>
+                                            <td>64nd / 60%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2378"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >n00bzCTF</a
+                                                >
+                                            </th>
+                                            <td>Aug 2024</td>
+                                            <td>96nd / 10%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2264"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >Nullcon CTF</a
+                                                >
+                                            </th>
+                                            <td>Mar 2024</td>
+                                            <td>76nd / 26%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2265"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >Hackday Qualifications
+                                                    2024</a
+                                                >
+                                            </th>
+                                            <td>Jan 2024</td>
+                                            <td>77nd / 66%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2086"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >Reply CTF 2023</a
+                                                >
+                                            </th>
+                                            <td>Oct 2023</td>
+                                            <td>58nd / 16%</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2011/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >FAUST CTF</a
+                                                >
+                                            </th>
+                                            <td>Sep 2023</td>
+                                            <td>72nd / 32%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/2087"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >CSAW CTF</a
+                                                >
+                                            </th>
+                                            <td>Sep 2023</td>
+                                            <td>191st / 17%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1862/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >Summit CTF</a
+                                                >
+                                            </th>
+                                            <td>Apr 2023</td>
+                                            <td>9th / 9%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1696/"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >MCH2022 CTF</a
+                                                >
+                                            </th>
+                                            <td>Jul 2022</td>
+                                            <td>19th / 4%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1657"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >n00bzCTF</a
+                                                >
+                                            </th>
+                                            <td>Jun 2022</td>
+                                            <td>9th / 4%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1660"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >BYUCTF</a
+                                                >
+                                            </th>
+                                            <td>May 2022</td>
+                                            <td>14th / 3%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1607"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >@HackDay Finals</a
+                                                >
+                                            </th>
+                                            <td>May 2022</td>
+                                            <td>17th / 72%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1606"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >@HackDay Qualification</a
+                                                >
+                                            </th>
+                                            <td>Apr 2022</td>
+                                            <td>4th / 1%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1567"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >Space Heroes CTF</a
+                                                >
+                                            </th>
+                                            <td>Apr 2022</td>
+                                            <td>14th / 2%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1605"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >OFPPT CTF</a
+                                                >
+                                            </th>
+                                            <td>Mar 2022</td>
+                                            <td>4th / 1%</td>
+                                        </tr>
+                                        <tr>
+                                            <th>
+                                                <a
+                                                    href="https://ctftime.org/event/1406"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    >Bambi CTF #6</a
+                                                >
+                                            </th>
+                                            <td>Oct 2021</td>
+                                            <td>20th / 12%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="section-divider-solid"></div>
+            <!-- Section Join Us -->
+            <section class="solid-bg">
+                <a name="join-us"></a>
+                <div class="container">
+                    <div
+                        class="d-flex align-items-center justify-content-start"
+                    >
+                        <div
+                            class="btn btn-outline-light rounded-circle"
+                            style="margin-right: 1rem; cursor: default"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-person-plus"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                                />
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+                                />
+                            </svg>
+                        </div>
+                        <h1>Join Us</h1>
+                    </div>
+                    <b class="divider"></b>
+                    <div class="row align-items-center justify-content-center">
+                        <div
+                            class="col-md-5 text-center d-flex align-items-center mb-5"
+                            style="flex-direction: column"
+                        >
+                            <p>You can chat with us over at Discord!</p>
+                            <div class="sm-spacer"></div>
+                            <a
+                                id="discord-invite"
+                                href="https://discord.gg/qeaqg8Sb86"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style="
+                                    text-decoration: none;
+                                    max-width: max-content;
+                                "
+                            >
+                                <button
+                                    style="display: flex; align-items: center"
+                                    type="button"
+                                    class="btn btn-outline-light btn-lg rounded-pill px-3"
+                                >
+                                    <img
+                                        style="
+                                            display: flex;
+                                            height: 32px !important;
+                                        "
+                                        src="https://htw-hackt.de/img/discord-icon.png"
+                                        alt="Discord Icon"
+                                    />
+                                    <div style="padding-left: 0.5rem">
+                                        Invite
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                        <div class="col-md-5 d-flex justify-content-center">
+                            <img
+                                id="qr-invite-image"
+                                class="tilt15"
+                                src="https://htw-hackt.de/img/qr-discord-invite.svg"
+                                alt="Discord Invite QR-Code"
+                                height="400px"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Wave Divider -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180">
+                <path
+                    class="solid-fill"
+                    fill-opacity="1"
+                    d="M0,64L60,69.3C120,75,240,85,360,74.7C480,64,600,32,720,42.7C840,53,960,107,1080,122.7C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+                ></path>
+            </svg>
+            <!-- Section whoami -->
+            <section>
+                <a name="whoami"></a>
+                <div class="container">
+                    <h1>$ whoami</h1>
+                    <b class="divider"></b>
+                    <div class="row align-items-center justify-content-center">
+                        <p>
+                            HTW Hackt was founded by two Computer Engineering
+                            students with the aim of bringing together all those
+                            who enjoy cyber security. From curious beginner to
+                            advanced hacker, we welcome everyone to our group of
+                            ever learning students.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <!-- Wave Divider -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1440 150">
+                    <path
+                        class="solid-fill"
+                        fill-opacity="1"
+                        d="M0,128L80,144C160,160,320,192,480,197.3C640,203,800,181,960,165.3C1120,149,1280,139,1360,133.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                    ></path>
+                </svg>
+                <!-- Footer Content -->
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Support Us Button -->
+                            <!-- Thanks for showing the interest to support us. Unfortunately we do not have this functionality setup yet.-->
+                            <div class="col d-flex justify-content-center">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-light btn-sm rounded-pill px-3"
+                                >
+                                    Support Us
+                                </button>
+                            </div>
+                            <!-- Join Us Button -->
+                            <div class="col d-flex justify-content-center">
+                                <a href="index.html#join-us">
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-light btn-sm rounded-pill px-3"
+                                    >
+                                        Join Us
+                                    </button>
+                                </a>
+                            </div>
+                            <!-- Privacy Group -->
+                            <div class="col d-flex justify-content-center">
+                                <div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div>
+                                                <!-- Links -->
+                                                <h6
+                                                    class="text-uppercase fw-bold mb-4"
+                                                >
+                                                    Privacy
+                                                </h6>
+                                                <p>
+                                                    <a
+                                                        href="https://htw-hackt.de/legal-notice.html"
+                                                        class="text-reset"
+                                                        >Legal Notice</a
+                                                    >
+                                                </p>
+                                                <p>
+                                                    <a
+                                                        href="https://htw-hackt.de/data-protection.html"
+                                                        class="text-reset"
+                                                        >Data Protection</a
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="row mt-4" style="left: 0; right: 0">
+                            <div class="col text-center">
+                                © 2024 Copyright - HTW Hackt
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-      </footer>
-    </div>
-    <!-- Bootstrap -->
-    <script src="https://htw-hackt.de/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://htw-hackt.de/js/jquery-3.6.0.min.js"></script>
-    <!-- Particles -->
-    <script type="text/javascript" src="https://htw-hackt.de/js/particles.min.js"></script>
-    <script type="text/javascript" src="https://htw-hackt.de/js/particle.js"></script>
-  </body>
+        <!-- Bootstrap -->
+        <script src="https://htw-hackt.de/js/bootstrap.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://htw-hackt.de/js/jquery-3.6.0.min.js"
+        ></script>
+        <!-- Particles -->
+        <script
+            type="text/javascript"
+            src="https://htw-hackt.de/js/particles.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://htw-hackt.de/js/particle.js"
+        ></script>
+    </body>
 </html>

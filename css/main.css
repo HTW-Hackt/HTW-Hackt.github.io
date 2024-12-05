@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "Sora";
+  src: url("../assets/fonts/Sora-VariableFont_wght.ttf")
+    format("truetype-variations");
+  font-weight: auto;
+}
+
+:root {
+  --main-bg: #1b1b22;
+  --bg-solid: #23232b;
+  --font-color: #7b7b8f;
+  --bg-secondary: #4f4f5d; /* Same as the QR code background*/
+  --header-font: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  font-family: "Sora", sans-serif;
+  font-weight: 300;
+  background-color: var(--main-bg);
+  color: var(--font-color);
+}
+
+@media only screen and (max-device-width: 812px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  #qr-invite-image {
+    display: none;
+  }
+}
+
+canvas {
+  display: block;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  bottom: 0px;
+  background-size: cover;
+}
+
+#particles-overlay {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+}
+
+header {
+  padding: 12vh 0;
+}
+
+.header-wrapper {
+  text-align: center;
+}
+
+.header-caption {
+  text-transform: uppercase;
+  color: var(--header-font);
+  letter-spacing: 0.1rem;
+  width: calc(100% + 0.1rem);
+  font-size: 1.125em;
+  line-height: 1.625;
+  font-weight: 600;
+}
+
+.header-title {
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  width: calc(100% + 0.025rem);
+  font-size: 5.25em;
+  line-height: 1.25;
+}
+
+.header-text {
+  font-size: 1.375em;
+  line-height: 1.75;
+  font-weight: 400;
+}
+
+section h1 {
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: var(--header-font);
+}
+
+section h2 {
+  font-weight: 500;
+  color: var(--header-font);
+}
+
+section p {
+  font-size: 1.5rem;
+}
+
+.footer-content {
+  background-color: var(--bg-solid);
+  padding-bottom: 5vh;
+}
+
+.btn {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.solid-bg {
+  background-color: var(--bg-solid);
+}
+
+.solid-fill {
+  fill: var(--bg-solid);
+}
+
+.section-divider-solid {
+  padding-bottom: 5rem;
+  background-color: var(--bg-solid);
+}
+
+.discord-logo {
+  height: 64px !important ;
+  width: 64px !important;
+}
+
+#discord-invite {
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  display: block;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2em 0;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+
+  width: 100%;
+  height: 1px;
+  bottom: 50%;
+  left: 0;
+
+  background: rgb(24, 227, 23);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(24, 227, 23, 1) 5%,
+    rgba(98, 239, 171, 1) 10%,
+    rgba(130, 255, 244, 1) 20%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(24, 227, 23, 1) 5%,
+    rgba(98, 239, 171, 1) 10%,
+    rgba(130, 255, 244, 1) 20%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(24, 227, 23, 1) 5%,
+    rgba(98, 239, 171, 1) 10%,
+    rgba(130, 255, 244, 1) 20%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#18e317",endColorstr="#ffffff",GradientType=1);
+}
+
+.tilt15 {
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+.table {
+  width: max-content;
+  color: var(--font-color);
+  font-size: 1.25rem;
+}
+
+.theader {
+  color: #fff;
+  font-weight: 100;
+}
+
+table a {
+  color: var(--font-color);
+}
+
+.gradient {
+  background: rgb(24, 227, 23);
+  background: -moz-linear-gradient(
+    135deg,
+    rgba(24, 227, 23, 1) 0%,
+    rgba(98, 239, 171, 1) 34%,
+    rgba(130, 255, 244, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    rgba(24, 227, 23, 1) 0%,
+    rgba(98, 239, 171, 1) 34%,
+    rgba(130, 255, 244, 1) 100%
+  );
+  background: linear-gradient(
+    135deg,
+    rgba(24, 227, 23, 1) 0%,
+    rgba(98, 239, 171, 1) 34%,
+    rgba(130, 255, 244, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#18e317",endColorstr="#82fff4",GradientType=1);
+}
+
+.icon {
+  color: var(--bg-solid);
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.75rem;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sm-spacer {
+  height: 2.5rem;
+}
+
+footer .col {
+  margin: 0.5rem 0;
+}
+
+.svg-shadow {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}
+
+.legal-notice-content {
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.data-protection-content {
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  overflow-x: auto;
+  overflow-wrap: anywhere;
+}
+
+
+
+details.spoiler summary::after {
+  content: var(--hidden);
+  filter: blur(10px);
+  display: block;
+}
+
+details[open] summary::after {
+  display: none;
+}
+
+
