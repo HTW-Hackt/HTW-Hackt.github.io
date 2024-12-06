@@ -27,13 +27,23 @@ See our guide on Installing Kali: [Guide: Install Kali](./InstallKali.md)
 
 #  TryHackMe VPN
 
-THM does provide the intentionally vulnrable VMs but they only are accessable through their Virtual Private Network [VPN]. To connect to their VPN you need to download your VPN Config which you can find under access in your profile. (Or once logged in, use this link: https://tryhackme.com/r/access)
-<#-- Hier Bild einbinden pls -->
-Here click "Download configuration file"-Button to get your VPN config file.
+!!!
+https://tryhackme.com/r/room/openvpn
+!!!
+
+THM does provide the intentionally vulnerable VMs but they only are accessable through their Virtual Private Network *VPN*. 
+Once you are logged in you can find your VPN Config under access in your profile or use this link: https://tryhackme.com/r/access
+There click "Download configuration file"-Button to get your VPN config file.
 
 # (Install OpenVPN)
 
+OpenVPN should be installed by default on your Kali. However should it not be, you can install it as follows:
+* open a terminal (ctrl + alt + t)
+* type: "sudo apt update" (this updates your package sources)
+* type: "sudo apt insall openvpn" (this actually installes the openvpn package)
+
 # Connect To THM VPN
 
+Remember when we downloaded the VPN config file? and where you saved it to? ... great we need that now! (If you did not move the config file it should be under /Dowloads)
+To finally connect your pc to the THM VPN we once again open a terminal and type: "sudo openvpn ~/Downloads/NameOfYourVpnConfigFile" 
 
-<#-- This is a markdown comment -->
