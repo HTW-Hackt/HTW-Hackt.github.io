@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTW Hackt</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <!-- Particles Background -->
+        <div id="particles-js"></div>
+        <!-- Main Content -->
+        <div id="particles-overlay">
+            <!-- Header -->
+            <header>
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="header-wrapper col-md-6">
+                            <h3 class="header-caption">Blog Post:</h3>
+                            <h1 class="header-title my-5">{{ page.title }}</h1>
+                            <p class="header-text">{{ page.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- Section Content -->
+            <section>
+                <a name="activities"></a>
+                <div class="container">
+                    <!-- Content Header -->
+                    <div
+                        class="d-flex align-items-center justify-content-start"
+                    >
+                        <div
+                            class="btn btn-outline-light rounded-circle"
+                            style="margin-right: 1rem; cursor: default"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-activity"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"
+                                />
+                            </svg>
+                        </div>
+                        <h1>{{ page.title }}}</h1>
+                    </div>
+                    <b class="divider"></b>
+                    <!-- Content Content -->
+                    <div class="row text-center">
+                        <div class="col-md-4 mt-4">
+                            <div class="icon gradient mb-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="40"
+                                    height="40"
+                                    fill="currentColor"
+                                    class="bi bi-journal-code svg-shadow"
+                                    viewBox="0 0 16 16"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M8.646 5.646a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 8 8.646 6.354a.5.5 0 0 1 0-.708zm-1.292 0a.5.5 0 0 0-.708 0l-2 2a.5.5 0 0 0 0 .708l2 2a.5.5 0 0 0 .708-.708L5.707 8l1.647-1.646a.5.5 0 0 0 0-.708z"
+                                    />
+                                    <path
+                                        d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                                    />
+                                    <path
+                                        d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                                    />
+                                </svg>
+                            </div>
+                            <p>{{ page.content }}</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Wave Divider -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 170 1440 140">
+                <path
+                    class="solid-fill"
+                    fill-opacity="1"
+                    d="M0,192L120,213.3C240,235,480,277,720,282.7C960,288,1200,256,1320,240L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+                ></path>
+            </svg>
+            <!-- Section author -->
+            <section>
+                <a name="author"></a>
+                <div class="container">
+                    <h1>$ whoami</h1>
+                    <b class="divider"></b>
+                    <div class="row align-items-center justify-content-center">
+                        <p>{{ page.author}}</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <!-- Wave Divider -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 90 1440 150">
+                    <path
+                        class="solid-fill"
+                        fill-opacity="1"
+                        d="M0,128L80,144C160,160,320,192,480,197.3C640,203,800,181,960,165.3C1120,149,1280,139,1360,133.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                    ></path>
+                </svg>
+                <!-- Footer Content -->
+                <div class="footer-content">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Support Us Button -->
+                            <!-- Thanks for showing the interest to support us. Unfortunately we do not have this functionality setup yet.-->
+                            <div class="col d-flex justify-content-center">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-light btn-sm rounded-pill px-3"
+                                >
+                                    Support Us
+                                </button>
+                            </div>
+                            <!-- Join Us Button -->
+                            <div class="col d-flex justify-content-center">
+                                <a href="index.html#join-us">
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-light btn-sm rounded-pill px-3"
+                                    >
+                                        Join Us
+                                    </button>
+                                </a>
+                            </div>
+                            <!-- Privacy Group -->
+                            <div class="col d-flex justify-content-center">
+                                <div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div>
+                                                <!-- Links -->
+                                                <h6
+                                                    class="text-uppercase fw-bold mb-4"
+                                                >
+                                                    Privacy
+                                                </h6>
+                                                <p>
+                                                    <a
+                                                        href="./legal-notice.html"
+                                                        class="text-reset"
+                                                        >Legal Notice</a
+                                                    >
+                                                </p>
+                                                <p>
+                                                    <a
+                                                        href="./data-protection.html"
+                                                        class="text-reset"
+                                                        >Data Protection</a
+                                                    >
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Copyright -->
+                        <div class="row mt-4" style="left: 0; right: 0">
+                            <div class="col text-center">
+                                © 2024 Copyright - HTW Hackt
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Bootstrap -->
+        <script src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+        <!-- Particles -->
+        <script type="text/javascript" src="./js/particles.min.js"></script>
+        <script type="text/javascript" src="./js/particle.js"></script>
+    </body>
+</html>
