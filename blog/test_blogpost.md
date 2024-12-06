@@ -2,6 +2,7 @@
 layout: blogpost
 title: Test Blogpost
 author: test author
+date: today obviously
 description: just a test blogpost to test posting blogs
 ---
 
