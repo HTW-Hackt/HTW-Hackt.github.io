@@ -1,6 +1,8 @@
 ---
 layout: blogpost
 title: Test Blogpost
+author: test author
+description: just a test blogpost to test posting blogs
 ---
 
 # This is a test
