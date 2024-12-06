@@ -1,23 +1,31 @@
 ---
 layout: blogpost
 title: TryHackeMe - Quickstart
-author: ME
-date: today obviously
-description: This Guide covers how to acces the vulnrable Virtual Machines porvided by TryHackMe
+author: HTW Hackt
+date: 6.Dec 2024
+description: This guide covers how to start using the learning platform TryHackMe.com.
 ---
 
-# Get TryHackeMe Account
+# Create an Account
 
-TryHackMe [THM] is a very beginner friendly platform which is geared toward teaching you cyber security. This is the Platform we recommend using, which is also going to be used during the onboarding Event. Here is a quick overwiev on the principals of this website:
-THM hosts intetntionally vulnrable Virtual Machines [VM], so called Rooms, which provide structured learing Expirience. There are differnt kind of rooms varying in how much help THM provides. 
-First there are Walkthrough Rooms intent to teach new topics, they ocntian a lot of information and ask more comprehesive questions.
-And second there are Challange(CTF) Rooms. In this type of Room have to find the the hidden secrets within the  and you are given no further information about this box, other than the IP-Address.
-Sometimes those Chanllange Rooms are more guided than others if that is the case the phrasing of the question often provides some insight on how to continue.
+[TryHackMe](https://tryhackme.com), or short THM, is a beginner friendly platform to learn cyber security.
+We recommend this platform for beginners and use it in our newbie events and trainings. THM offers *Walktrough* and *Challenges (CTF)* rooms, more on that later. For now we need an account. Althoug THM offers a subscription service which provides access to additional rooms, the free version is sufficient for a long time and wide area of things to learn.
 
-You can get your THM account here: https://tryhackme.com/
+You can sign up for an account [here](https://tryhackme.com/signup) and need to provide a username, e-mail and password. You should use a password manager.
+Then you will be asked some questions to personalize your learning experince, this affects which *Learning Paths* will be recommended to you.
 
+THM offers different *Learning Paths*, consisting of different rooms. Each path is design to for you to learn and experiment in different topics or fields. You can do single rooms, but for a guided experience you should commit to a path fitting for your experience and interest.
 
-# Get TryHackMe VPN Config
+The way you learn on THM is by doing rooms. *Walktrough* rooms are intended to provide you with basic knowledge and theoretical background information. *Challenge* or *CTF* rooms are intended to provide you a hand on labs experience. In these rooms you will need to know some basics and depending on the difficulty you will get more or less tips and guidance on how to hack the box.
+
+Once you're signed up you can acces a wide range of *Learning Paths* and *Walktrough* or *Challenge* rooms.
+
+To hack a box you usually need to compromise it and escalate your privileges. Meaning you need to abuse a misconfiguration or vulnerability to get access and then escalate this access to root/admin privileges.
+And to compromise it in the first place you will need some tools, this is where Kali comes into play. Once you have your Kali running and are connected via a vpn you can start hacking!
+
+See our guide on Installing Kali: [Guide: Install Kali](./InstallKali.md)
+
+#  TryHackMe VPN
 
 THM does provide the intentionally vulnrable VMs but they only are accessable through their Virtual Private Network [VPN]. To connect to their VPN you need to download your VPN Config which you can find under access in your profile. (Or once logged in, use this link: https://tryhackme.com/r/access)
 <#-- Hier Bild einbinden pls -->
