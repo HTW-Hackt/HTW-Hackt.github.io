@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: default
 title: Test Blogpost
 author: test author
 date: today obviously
