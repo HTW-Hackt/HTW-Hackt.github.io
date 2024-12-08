@@ -25,25 +25,26 @@ And to compromise it in the first place you will need some tools, this is where 
 
 See our guide on Installing Kali: [Guide: Install Kali](./InstallKali.md)
 
+
 #  TryHackMe VPN
 
-!!!
-https://tryhackme.com/r/room/openvpn
-!!!
-
 THM does provide the intentionally vulnerable VMs but they only are accessable through their Virtual Private Network *VPN*. 
-Once you are logged in you can find your VPN Config under access in your profile or use this link: https://tryhackme.com/r/access
-There click "Download configuration file"-Button to get your VPN config file.
+Once you are logged in you can find a room explainung how to connect yourself to the THM VPN [here](https://tryhackme.com/r/room/openvpn). 
+This room provides more information than we need (e.g. how to install openvpn on Windows/Mac). Because of oure suggestet setup you only need follow the Tasks 1, 4 and 6.
 
-# (Install OpenVPN)
+## VPN Config File
 
-OpenVPN should be installed by default on your Kali. However should it not be, you can install it as follows:
-* open a terminal (ctrl + alt + t)
-* type: "sudo apt update" (this updates your package sources)
-* type: "sudo apt insall openvpn" (this actually installes the openvpn package)
+In Task 1 you find a link and instruction to download your VPN config file.
 
-# Connect To THM VPN
+## Connect to THM VPN
 
-Remember when we downloaded the VPN config file? and where you saved it to? ... great we need that now! (If you did not move the config file it should be under /Dowloads)
-To finally connect your pc to the THM VPN we once again open a terminal and type: "sudo openvpn ~/Downloads/NameOfYourVpnConfigFile" 
+OpenVPN should already be installed on you system, however if this is not the case for whatever reason you can follow the instructions of Task 4 to install OpenVPN.
+* First: open a Terminal. (Keyboardshortcut: ctrl + alt + t)
+* Second: type "sudo apt update" - This step is left out in the THM room but should be done bevore every install of any software ... this command updates your package sources 
+* and Third: type "sudo apt install openvpn" - This actually installes the openvpn package
 
+Tip: If you did not adjust the download path when downloading the vpn config file, the location of your vpn config file will be "/home/*yourUserName*/Dowloads/*yourUserName*.ovpn"
+
+## Check VPN Connecetion
+
+Lastly you can check your VPN connection in Task 6.
