@@ -23,28 +23,44 @@ Once you're signed up you can acces a wide range of *Learning Paths* and *Walktr
 To hack a box you usually need to compromise it and escalate your privileges. Meaning you need to abuse a misconfiguration or vulnerability to get access and then escalate this access to root/admin privileges.
 And to compromise it in the first place you will need some tools, this is where Kali comes into play. Once you have your Kali running and are connected via a vpn you can start hacking!
 
-See our guide on Installing Kali: [Guide: Install Kali](./InstallKali.md)
+See our guide on installing a hypervisor: [Guide: Install Hypervisor](.HypervisorInstall.md)
+See our guide on installing Kali: [Guide: Install Kali](./InstallKali.md)
 
 
 #  TryHackMe VPN
 
-THM does provide the intentionally vulnerable VMs but they only are accessable through their Virtual Private Network *VPN*. 
-Once you are logged in you can find a room explainung how to connect yourself to the THM VPN [here](https://tryhackme.com/r/room/openvpn). 
-This room provides more information than we need (e.g. how to install openvpn on Windows/Mac). Because of oure suggestet setup you only need follow the Tasks 1, 4 and 6.
+Boxes provided by THM are intentionally vulnerable but they are only accessable through their Virtual Private Network *VPN* and do not have an internet connection.
 
-## VPN Config File
+Once you are logged in on THM you can find a room explainung how to connect yourself to the THM VPN [here](https://tryhackme.com/r/room/openvpn).
 
-In Task 1 you find a link and instruction to download your VPN config file.
+We want to connect from within our Kali VM so we only need to do the follwing Tasks:
+1. Get the configuration file
+4. Connect using `openvpn`
+6. Check our connection
+
+
+## Get Config File
+
+In *Task 1* you find instructions to download your VPN config file from the [access](https://tryhackme.com/access) area of your profile.
+
+![Screenshot with highlighted access area of your profile](./images/vpn_access.png)
+
+Sometimes, especially on the first download, this config can be bugged.
+You can change your region and regenerate the configuration file if that is the case.
 
 ## Connect to THM VPN
 
-OpenVPN should already be installed on you system, however if this is not the case for whatever reason you can follow the instructions of Task 4 to install OpenVPN.
-* First: open a Terminal. (Keyboardshortcut: ctrl + alt + t)
-* Second: type "sudo apt update" - This step is left out in the THM room but should be done bevore every install of any software ... this command updates your package sources 
-* and Third: type "sudo apt install openvpn" - This actually installes the openvpn package
+In *Task 4* you find instructions to connect to the THM VPN.
 
-Tip: If you did not adjust the download path when downloading the vpn config file, the location of your vpn config file will be "/home/*yourUserName*/Dowloads/*yourUserName*.ovpn"
+You can connect to the VPN via `sudo openvpn <Your_Config.ovpn`. This process needs to keep running, if you close it you will lose your VPN connection.
+
+If you did not adjust the download path when downloading the vpn config file, the location of your vpn config file will be `"/home/`<User>`/Dowloads/<THM_User>.ovpn"`
+
+An OpenVPN client should already be installed on Kali, if this is not the case you can install it via `sudo apt update && sudo apt install openvpn`
 
 ## Check VPN Connecetion
 
-Lastly you can check your VPN connection in Task 6.
+Finally you can check your VPN connection as shown in *Task 6*.
+
+You will always be able to reach `10.10.10.10` when connected to the THM VPN.
+If a box in a room is not responsive you can check your VPN connection via ping or browse to said IP.
