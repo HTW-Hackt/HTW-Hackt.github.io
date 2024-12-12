@@ -4,12 +4,19 @@ title: Guides Overview
 ---
 
 <h1>Guides Overview</h1>
-<b class="divider"></b>
+
 <ul>
     {% for entry in site.guides %}
-    <li>
-        <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+    <div>
+        <b class="divider"></b>
+        <h2>
+            <a
+                href="{{ entry.url }}"
+                style="text-decoration: none; color: inherit"
+                >{{ entry.title }}</a
+            >
+        </h2>
         <p>{{ entry.description }}</p>
-    </li>
+    </div>
     {% endfor %}
 </ul>
