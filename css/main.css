@@ -34,6 +34,14 @@ body {
   }
 }
 
+h2, a {
+	color: #ffffff;
+}
+
+h2, a:hover {
+	color: #7b7b8f;
+}
+
 canvas {
   display: block;
 }
