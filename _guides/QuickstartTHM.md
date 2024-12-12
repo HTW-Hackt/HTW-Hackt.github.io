@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Quickstart TryHackeMe
 author: HTW Hackt
 date: 6.Dec 2024

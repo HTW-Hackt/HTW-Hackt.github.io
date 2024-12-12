@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: default
 title: Installing a Hypervisor
-author: h474rd
+author: HTW Hackt
 date: 6.Dec 2024
 description: Installing a hypervisor is the first step to setting up virtual machines or even a whole lab. This guide will give you some basics on hypervisors and show you how to set one up to start your hacking journey.
 ---

@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: default
 title: Installing Kali Linux
-author: h474rd
+author: HTW hackt
 date: 6.Dec 2024
 description: After successfully installing a hypervisor the next step is to install kali linux, a Linux distribution specifically built for security hobbiests and professionals. Kali bundles lots of commonly used tools, this guide will show you how to set it up locally.
 ---
