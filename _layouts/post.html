@@ -6,7 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
         <title>HTW Hackt</title>
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="{{ site.baseurl }}/css/bootstrap.min.css"
+        />
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
     </head>
     <body>
@@ -50,6 +53,9 @@
                     <h1>$ whoami</h1>
                     <div class="row align-items-center justify-content-center">
                         <p>{{ page.author}}</p>
+                    </div>
+                    <div class="row align-items-center justify-content-center">
+                        <p>{{ page.author-description}}</p>
                     </div>
                 </div>
             </section>
@@ -133,9 +139,18 @@
         </div>
         <!-- Bootstrap -->
         <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"></script>
+        <script
+            type="text/javascript"
+            src="{{ site.baseurl }}/js/jquery-3.6.0.min.js"
+        ></script>
         <!-- Particles -->
-        <script type="text/javascript" src="{{ site.baseurl }}/js/particles.min.js"></script>
-        <script type="text/javascript" src="{{ site.baseurl }}/js/particle.js"></script>
+        <script
+            type="text/javascript"
+            src="{{ site.baseurl }}/js/particles.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="{{ site.baseurl }}/js/particle.js"
+        ></script>
     </body>
 </html>
