@@ -1,3 +1,9 @@
 markdown: kramdown
 exclude:
   - README.md
+
+collections:
+  guides:
+    output: true
+  blog:
+    output: true

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Installing Kali Linux
 author: h474rd
 date: 6.Dec 2024

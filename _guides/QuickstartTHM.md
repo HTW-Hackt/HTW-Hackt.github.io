@@ -1,6 +1,6 @@
 ---
-layout: default
-title: TryHackeMe - Quickstart
+layout: post
+title: Quickstart TryHackeMe
 author: HTW Hackt
 date: 6.Dec 2024
 description: This guide covers how to start using the learning platform TryHackMe.com.

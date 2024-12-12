@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog Overview
+---
+
+<h1>Blog Overview</h1>
+<b class="divider"></b>
+<ul>
+    {% for entry in site.blog %}
+    <li>
+        <h2><a href="{{ entry.url }}">{{ entry.title }}</a></h2>
+        <p>{{ entry.description }}</p>
+    </li>
+    {% endfor %}
+</ul>
