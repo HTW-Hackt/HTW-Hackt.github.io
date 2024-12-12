@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: default
 title: TryHackeMe - Quickstart
 author: HTW Hackt
 date: 6.Dec 2024
@@ -24,6 +24,7 @@ To hack a box you usually need to compromise it and escalate your privileges. Me
 And to compromise it in the first place you will need some tools, this is where Kali comes into play. Once you have your Kali running and are connected via a vpn you can start hacking!
 
 See our guide on installing a hypervisor: [Guide: Install Hypervisor](.HypervisorInstall.md)
+
 See our guide on installing Kali: [Guide: Install Kali](./InstallKali.md)
 
 
