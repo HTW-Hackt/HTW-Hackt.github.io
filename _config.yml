@@ -1,4 +1,6 @@
 markdown: kramdown
+repository: HTW-Hackt/HTW-Hackt.github.io
+
 exclude:
   - README.md
 
